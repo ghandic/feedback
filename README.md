@@ -18,4 +18,6 @@ pip install -r requirements.txt
 python3 generate.py -i <image dir> -f <feedback dir>
 ```
 
-This will generate a file called `index.html`
+This will generate a file called `index.html` similar to the example below:
+
+![Example output](example_output.png)
