@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+venv/
+resources/images/people/*.jpg
+resources/feedback/**/*.feedback
+!resources/images/people/default.jpg
+!resources/images/people/achallis.jpg
+!resources/feedback/EXAMPLE/*.feedback

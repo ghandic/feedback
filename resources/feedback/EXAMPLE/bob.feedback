@@ -1,0 +1,17 @@
+{
+  "source": "LinkedIn",
+  "reviewer": {
+    "name": "bob tod",
+    "role": "Project Manager",
+    "company": "XYZ",
+    "id": "bobtod"
+  },
+  "comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.",
+  "date": "10/02/2018",
+  "reviewee": {
+    "name": "Jane Doe",
+    "role": "Technical Business Analyst",
+    "company": "XYZ",
+    "id": "janedoe"
+  }
+}

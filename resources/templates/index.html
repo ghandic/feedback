@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback - {{FeedbackForm[0].reviewee.name.capitalize()}}</title>
+  <style type="text/css">
+	  {{css}}
+  </style>
+  </head>
+  <body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-12">
+				<h2>Feedback - <b>{{FeedbackForm[0].reviewee.name.capitalize()}}</b></h2>
+    			<div class="feedback">
+    				<div class="feedback-inner">
+    					<div class="item feedback-item active">
+							{% for Feedback in FeedbackForm %}
+							<div class="row col-sm-6">
+								<div class="testimonial-wrapper">
+									<div class="testimonial">{{Feedback.comments}}</div>
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<a href="{{Feedback.reviewer.linkedin.link}}" target="_blank">
+												<img src="{{Feedback.reviewer.linkedin.image}}" alt="">
+											</a>
+										</div>
+										<div class="media-body">
+											<div class="overview">
+												<div class="name"><b>{{Feedback.reviewer.name.capitalize()}}</b></div>
+												<div class="details">{{Feedback.reviewer.role.capitalize()}}</div>
+												<div class="date">{{Feedback.date}}</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </body>
+</html>
