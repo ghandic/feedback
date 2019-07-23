@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 #### How to use
 ```bash
-python3 generate.py
+python3 generate.py -i <image dir> -f <feedback dir>
 ```
 
 This will generate a file called `index.html`
