@@ -58,7 +58,7 @@ class LinkedIn(object):
             log.info(f"Using default profile image for {name} as there is a missing id")
             self.image = img_to_b64(os.path.join(img_dir, "default.jpg"))
             self.link = ""
-        elif not os.path.exists(f"resources/images/people/{id}.jpg"):
+        elif not os.path.exists(os.path.join(img_dir, "default.jpg")):
             log.warning(
                 f"Couldn't find picture for {name}, download from https://www.linkedin.com/in/{id}/ and put into resources/images/people/{id}.jpg")
             self.image = img_to_b64(os.path.join(img_dir, "default.jpg"))
